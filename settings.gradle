@@ -1,0 +1,8 @@
+/*
+ * PETEP Example Extension - Gradle Settings
+ */
+
+rootProject.name = 'PetepExampleExtension'
+
+// Path to PetepLib file.
+gradle.ext.petepLib = '../../PETEP/build/libs/PetepLib.jar'
