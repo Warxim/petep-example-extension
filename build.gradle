@@ -4,17 +4,18 @@
 
 plugins {
     id 'java-library'
-    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
-    compile files(gradle.ext.petepLib)
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    compileOnly files(gradle.ext.petepLib)
 }
-
 
 javafx {
     version = "11.0.2"
@@ -22,5 +23,5 @@ javafx {
 }
 
 jar {
-    baseName = "ExamplePetepExtension"
+    archiveBaseName = "ExamplePetepExtension"
 }

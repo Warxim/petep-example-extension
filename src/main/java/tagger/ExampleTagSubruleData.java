@@ -1,19 +1,11 @@
 package tagger;
 
 import com.warxim.petep.extension.internal.tagger.factory.TagSubruleData;
+import lombok.EqualsAndHashCode;
+import lombok.Value;
 
+@Value
+@EqualsAndHashCode(callSuper=true)
 public class ExampleTagSubruleData extends TagSubruleData {
-  private String stringParam;
-
-  public ExampleTagSubruleData(String stringParam) {
-    this.stringParam = stringParam;
-  }
-
-  public String getStringParam() {
-    return stringParam;
-  }
-
-  public void setStringParam(String stringParam) {
-    this.stringParam = stringParam;
-  }
+    String stringParam;
 }

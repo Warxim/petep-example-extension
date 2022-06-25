@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="37.0" prefWidth="90.0" xmlns="http://javafx.com/javafx/11.0.1">
+    <children>
+        <Label layoutX="10.0" layoutY="10.0" styleClass="heading-2" text="Example Tab" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0"/>
+    </children>
+</AnchorPane>

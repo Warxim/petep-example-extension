@@ -5,4 +5,4 @@
 rootProject.name = 'PetepExampleExtension'
 
 // Path to PetepLib file.
-gradle.ext.petepLib = '../../PETEP/build/libs/PetepLib.jar'
+gradle.ext.petepLib = '../../petep/build/libs/petep-lib.jar'

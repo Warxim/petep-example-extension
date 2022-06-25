@@ -1,21 +1,19 @@
 package interceptor;
 
+/**
+ * Store for persisting PDU count.
+ */
 public class ExampleInterceptorStore {
-  private int pduCount;
+    private int pduCount;
 
-  public ExampleInterceptorStore() {
-    pduCount = 0;
-  }
+    public ExampleInterceptorStore() {
+        pduCount = 0;
+    }
 
-  public int getPduCount() {
-    return pduCount;
-  }
-
-  public int increaseAndGetCount() {
-    return ++pduCount;
-  }
-
-  public void increaseCount() {
-    ++pduCount;
-  }
+    /**
+     * Increases the PDU count and returns it.
+     */
+    public int increaseAndGetCount() {
+        return ++pduCount;
+    }
 }
