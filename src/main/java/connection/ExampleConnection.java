@@ -1,6 +1,6 @@
 package connection;
 
-import com.warxim.petep.core.connection.Connection;
+import com.warxim.petep.core.connection.ConnectionBase;
 import com.warxim.petep.core.pdu.PduDestination;
 import com.warxim.petep.proxy.worker.Proxy;
 import com.warxim.petep.util.PduUtils;
@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  * Example connection for example proxy.
  * <p>Simulates messages from client and server and sends them through PETEP.</p>
  */
-public class ExampleConnection extends Connection {
+public class ExampleConnection extends ConnectionBase {
     private final String name;
     private final ExecutorService executor;
     private boolean running;
